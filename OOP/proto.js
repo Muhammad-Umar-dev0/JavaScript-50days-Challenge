@@ -1,4 +1,9 @@
 
+//new keyword creates new object.
+//That object gets linked to the prototype of constructor function.
+//constructor function is called and "this" is bounded to that object.
+//new object is returned.
+
 const person={
     city:"Islamabad"
     

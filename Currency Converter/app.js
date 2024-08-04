@@ -5,7 +5,7 @@ let icon = document.querySelector(".icon");
 let exchangeTxt = document.querySelector(".exchange_rate");
 let getBtn = document.querySelector("button");
 
-// Assuming country_list is defined in country_list.js
+
 for (let i = 0; i < droplist.length; i++) {
     for (let currency_code in country_list) {
         let selected = 

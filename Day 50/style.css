@@ -1,0 +1,131 @@
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+.wrapper {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+.password-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    padding: 0 45px 0 20px;
+    background-color: #f1f5f9;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #2d3748;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #3182ce;
+    background-color: #ebf8ff; 
+}
+
+
+#toggle {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #a0aec0;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+#toggle.active {
+    color: #3182ce;
+}
+
+.criteria {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.criteria p {
+    font-size: 14px;
+    color: #a0aec0;
+    margin-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+    padding-left: 20px;
+}
+
+.criteria p::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.criteria p.valid {
+    color: #38a169;
+}
+
+.criteria p.valid::before {
+    color: #38a169;
+}
+
+
+#strength-bar {
+    background-color: #e2e8f0;
+    height: 10px;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.strength {
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+}
+
+p#msg {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #2d3748;
+    font-weight: bold;
+}
